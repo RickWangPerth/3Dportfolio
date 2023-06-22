@@ -11,7 +11,7 @@ const FeedbackCard = ({ index, name, testimonial, designation, company, image })
     variants={fadeIn("","spring", index * 0.5, 0.75)}
     className='bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full'
   >
-    <p className='text-white font-black text-[48px]'>1</p>
+    <p className='text-white font-black text-[48px]'>&quot;</p>
     <div className='mt-1'>
       <p className='text-white trackinf-wider text-[18px]'>{testimonial}</p>
       <div className='mt-7 flex justify-between items-center gap-1'>

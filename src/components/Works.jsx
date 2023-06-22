@@ -90,5 +90,5 @@ const Works = () => {
   )
 }
 
-const WorksSection = SectionWrapper(Works, 'works')
+const WorksSection = SectionWrapper(Works, 'work')
 export default WorksSection
