@@ -1,4 +1,5 @@
-import React, { Suspense } from "react";
+/* eslint-disable react/no-unknown-property */
+import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import {
   Decal,
@@ -7,6 +8,7 @@ import {
   Preload,
   useTexture,
 } from "@react-three/drei";
+import PropTypes from 'prop-types';
 
 import CanvasLoader from "../Loader";
 
@@ -36,6 +38,9 @@ const Ball = (props) => {
     </Float>
   );
 };
+Ball.propTypes = {
+  imgUrl: PropTypes.string.isRequired,
+};
 
 const BallCanvas = ({ icon }) => {
   return (
@@ -52,6 +57,9 @@ const BallCanvas = ({ icon }) => {
       <Preload all />
     </Canvas>
   );
+};
+BallCanvas.propTypes = {
+  icon: PropTypes.string.isRequired,
 };
 
 export default BallCanvas;
