@@ -103,7 +103,7 @@ const Contact = () => {
               name='message' 
               value={form.message}
               onChange={handleChange}
-              placeholder="What do you want to say?"
+              placeholder="Let's shape future together!"
               className='bg-tertiary py-4 px-6 rounded-lg text-white
                placeholder:text-secondary focus:outline-none border-none font-medium'>
               </textarea>

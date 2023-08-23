@@ -6,7 +6,7 @@ import { fadeIn, textVariant } from '../utils/motion'
 import { testimonials } from '../constants'
 import PropTypes from 'prop-types';
 
-const FeedbackCard = ({ index, name, testimonial, designation, company, image }) => (
+const FeedbackCard = ({ index, name, testimonial, designation, company}) => (
   <motion.div 
     variants={fadeIn("","spring", index * 0.5, 0.75)}
     className='bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full'
@@ -20,13 +20,9 @@ const FeedbackCard = ({ index, name, testimonial, designation, company, image })
             <span className='blue-text-gradient'>@</span> {name}
           </p>
           <p className='mt-1 text-secondary text-[12px]'>
-            {designation} of {company}
+            {designation} @ {company}
           </p>
         </div>
-        <img
-          src={image}
-          alt={`feedback-by-${name}`}
-          className='w-10 h-10 rounded-full object-cover'/>
       </div>
     </div>
   </motion.div>
@@ -46,12 +42,12 @@ const Feedbacks = () => {
         <div className={`${styles.padding} bg-tertiary rounded-2xl min-h-[300px]`}
         >
           <motion.div variants={textVariant()}>
-            <p className={styles.sectionSubText}>What others say</p>
-            <h2 className={styles.sectionHeadText}>Testimonails.</h2>
+            <p className={styles.sectionSubText}>to whom I am truly grateful</p>
+            <h2 className={styles.sectionHeadText}>Professional Recommenders</h2>
           </motion.div>
         </div>
 
-        <div className={`${styles.paddingX} -mt-20 pb-14 flex flex-warp gap-7`}>
+        <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7`}>
           {testimonials.map((testimonial, index) => (
             <FeedbackCard 
               key={testimonial.name}
