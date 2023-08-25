@@ -30,7 +30,7 @@ import ecotrak from "./ecotrak.png";
 import roborigger from "./roborigger.png";
 import copilot from "./copilot.png";
 import graphdb from "./graphdb.png";
-import wasteringSystem from "./plantWateringSystem.jpg";
+import wasteringSystem from "./plantWateringSystem.png";
 import investMap from "./WAInvestMap.jpg";
 
 export {
