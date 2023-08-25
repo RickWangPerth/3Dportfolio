@@ -161,7 +161,7 @@ import {
       iconBg: "#383E56",
       date: "Jul 2023 - Current",
       points: [
-        "👨‍💻 Data Mining and Analysis with Python and ChatGPT: Utilize Python in conjunction with ChatGPT to scrape public information, followed by data analysis and visualization, assisting engineers in enhancing their workflow..",
+        "👨‍💻 Data Mining and Analysis with Python and ChatGPT: Utilize Python in conjunction with ChatGPT to scrape public information, followed by data analysis and visualization, assisting engineers in enhancing their workflow.",
         "👨‍💻 Onboarding System Development with Power Apps: Spearhead the development of an onboarding system using Power Apps, alleviating the administrative burden of repetitive tasks and ensuring data integrity.",
         "👨‍💻 Official Website Optimization (Ongoing): Collaborate in refining the company's official website, focusing on SEO enhancement to boost webpage visibility."
       ],
@@ -296,7 +296,7 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "Resberry PI",
+          name: "Raspberry Pi",
           color: "pink-text-gradient",
         },
       ],
